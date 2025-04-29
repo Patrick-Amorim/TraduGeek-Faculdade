@@ -10,14 +10,17 @@ if ($conexao->connect_error) {
     die("Conexão falhou: " . $conexao->connect_error);
 } 
 
-?>
 
-<!-- Dados do Usuario Master 
+/*
+Dados do Usuario Master 
 
 Login: tdGeek
 Senha: tradgeek
 Data Nascimento: 12/06/1980
 Nome da Mãe: TraduGeek Criadores
 Endereço: 21863-000
+*/
 
--->
+?>
+
+

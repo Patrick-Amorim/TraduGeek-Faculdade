@@ -1,5 +1,5 @@
 <?php
-include_once 'autenticaAdmin.php';
+include_once 'autenticaADmin.php';
 include_once('c.php'); // Conexão com o banco de dados
 
 // Definir quantos registros exibir por página para a lista de usuários

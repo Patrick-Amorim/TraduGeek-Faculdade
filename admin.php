@@ -1,7 +1,7 @@
 <?php
 
 // Inclui a autenticação de admin primeiro
-require_once 'autenticaAdmin.php';
+require_once 'autenticaADmin.php';
 
 // Inclui o arquivo de configuração do banco de dados
 require_once "c.php";
@@ -298,7 +298,7 @@ echo '<tr><td colspan="5">Nenhum log encontrado.</td></tr>';
                     echo "<td>" . htmlspecialchars($row['maxArquivos']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['recursos']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['suporte']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['limitacoes']) . "</td>";
+                    if($row['limitacoes'] != null){echo "<td>" . htmlspecialchars($row['limitacoes']) . "</td>";}else{echo "<td>N/A<td>";}
                     echo "<td><a href='editar_assinatura.php?idassinatura=$idassinatura' class='btn-acao'>Editar</a></td>";
                     echo "<td><button class='btn-acao btn-delete' onclick=\"confirmarExclusaoPlano('$idassinatura')\">Deletar</button></td>";
                     echo "</tr>";

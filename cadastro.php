@@ -31,7 +31,7 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
   // Execução da query
   if ($stmt->execute()) {
     // Redireciona o usuário para uma nova página
-    header("Location: resultadoCad.php");
+    header("Location: ResultadoCad.php");
     exit(); // Importante para interromper a execução do script após o redirecionamento
   } else {
     echo "Erro: " . $stmt->error;
@@ -83,7 +83,7 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                     </div>
 
                     <div class="form-group">
-                        <label for="sexo">Sexo</label>
+                        <label for="sexo">Gênero</label>
                         <select id="sexo" name="sexo" required class="field" oninput="validarSexo();">
                             <option value="" disabled selected>Selecione</option>
                             <option value="masculino">Masculino</option>
